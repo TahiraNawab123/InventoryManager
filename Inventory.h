@@ -4,20 +4,20 @@
 
 using namespace std;
 
-struct Supplier{   // struct of supplier
+struct Supplier{   
   string SupplierName;
   string ContactNumber;
   };
 
 
-struct Product{  //struct of product
+struct Product{  
   string ProductName;
   float ProductPrice;
   Supplier supplier;
   };
 
 
-struct Inventory{  //struct of inventory
+struct Inventory{  
   Product* product = nullptr;
   int size;
   int CurrentCount;
